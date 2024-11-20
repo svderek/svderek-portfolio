@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Impact';
+    src: url('../../assets/fonts/impact.ttf') format('truetype');
+}
+
 /* Загальні стилі для всього тексту */
 body {
     font-family: 'Poppins', sans-serif;
@@ -8,9 +13,9 @@ body {
 
 /* H1 */
 h1 {
-    font-family: 'Impact', sans-serif;
-    font-size: 64px;
-    letter-spacing: 1.8px;
+    font-family: Impact;
+    font-size: 64px; 
+    letter-spacing: 1.8px ;
     line-height: 80px;
 }
 
