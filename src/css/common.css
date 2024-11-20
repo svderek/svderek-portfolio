@@ -1,0 +1,101 @@
+/* Загальні стилі для всього тексту */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* H1 */
+h1 {
+    font-family: 'Impact', sans-serif;
+    font-size: 64px;
+    letter-spacing: 1.8px;
+    line-height: 80px;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 136px;
+        line-height: 156px;
+    }
+}
+
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 136px;
+    }
+}
+
+/* H2 */
+h2 {
+    font-family: 'Impact', sans-serif;
+    font-size: 52px;
+    letter-spacing: 1.8px;
+    line-height: 64px;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 108px;
+        line-height: 124px;
+    }
+}
+
+@media (min-width: 1280px) {
+    h2 {
+        font-size: 108px;
+    }
+}
+
+/* H3 */
+h3 {
+    font-family: 'Poppins Medium', sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+}
+
+@media (min-width: 1280px) {
+    h3 {
+        font-size: 36px;
+    }
+}
+
+/* Body 1 (Light) */
+.body1-light {
+    font-family: 'Poppins Light', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+}
+
+/* Body 1 (Medium) */
+.body1-medium {
+    font-family: 'Poppins Medium', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+}
+
+/* Caption */
+.caption {
+    font-family: 'Poppins Regular', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+}
+
+@media (min-width: 768px) {
+    .caption {
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
