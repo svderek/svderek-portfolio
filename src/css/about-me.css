@@ -1,1 +1,52 @@
+.aboutMe{
+    padding-bottom: 40px;
+}
 
+.h2_aboutMe{
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.23077;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #292929;
+    display: flex;
+    padding-top: 79px;
+    padding-bottom: 40px;
+    }
+
+.span_h2_aboutMe{
+    color: #00B068;}
+
+.photo_aboutMe{
+    padding-bottom: 40px;
+}
+
+.h3_aboutMe{font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #292929;
+    }
+
+.ul_aboutMe{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-bottom: 40px;
+}
+
+.ul_2_aboutMe{
+    padding-top: 32px;
+    padding-bottom: 40px;
+    }
+
+.li_2_aboutMe{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
