@@ -1,7 +1,7 @@
 
 
-  /* Хедер */
-  .header {
+/* Хедер */
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,16 +42,16 @@
     cursor: pointer;
   }
   
-  /* SVG у бургер-кнопці */
+ 
   .burger svg {
     display: block;
   }
   
-  /* Навігація (спочатку прихована) */
+  
   .navigation {
     display: none;
     align-items: center;
-    gap: 40px; /* Відстань між елементами */
+    gap: 40px; 
   }
   
   .nav-link {
@@ -71,9 +71,9 @@
   }
   
  
-/* @media (max-width: 767px) { */
+@media (max-width: 767px) { 
     .burger {
-      display: flex; /* Показуємо бургер-кнопку */
+      display: flex;
     }
   
     .navigation {
@@ -81,32 +81,39 @@
     }
   
   
+}
 
 
-
-  /* Планшетна версія: від 768px до 1279px */
+  
+    
   @media (min-width: 768px) and (max-width: 1279px) {
+
     .burger {
-      display: none; /* Ховаємо бургер-кнопку */
+      display: none; 
+      
     }
   
     .navigation {
-      display: flex; /* Показуємо навігацію */
+      display: flex;
+      
     }
   
     .header {
         padding-top: 32px; 
-    padding-bottom: 32px;    }
+    padding-bottom: 32px;   
+ }
     .logo {
         font-size: 32px;
         letter-spacing: 0.05em;
     }
   }
   
-  /* Десктопна версія: від 1280px */
+  
+  
   @media (min-width: 1280px) {
     .burger {
-      display: none; /* Переконуємося, що кнопка схована */
+      display: none; 
+      
     }
   
     .navigation {
@@ -126,6 +133,4 @@
         letter-spacing: 0.05em;
     }
    
-  }
-
-
+}
