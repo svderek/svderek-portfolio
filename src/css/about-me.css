@@ -1,6 +1,5 @@
 .aboutMe{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-bottom: 40px;
 }
 
 .h2_aboutMe{
@@ -21,7 +20,7 @@
     color: #00B068;}
 
 .photo_aboutMe{
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .h3_aboutMe{font-family: "Poppins", sans-serif;
@@ -38,11 +37,16 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .ul_2_aboutMe{
+    padding-top: 32px;
+    padding-bottom: 40px;
+    }
+
+.li_2_aboutMe{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;}
-
+    gap: 12px;
+}
