@@ -1,0 +1,44 @@
+.my-projects-heading {
+  font-weight: 400;
+  font-size: 108px;
+  line-height: 1.14815;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.accent {
+  color: #00b068;
+}
+
+.my-projects-technologies {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  font-family: 'Poppins', sans-serif;
+}
+
+.my-projects-names {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.33333;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.my-projects-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  font-family: 'Poppins', sans-serif;
+}
+
+.my-projects-img {
+  border-radius: 24px;
+}
