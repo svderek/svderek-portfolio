@@ -1,0 +1,133 @@
+
+/* Базові стилі */
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+   */
+  /* Хедер */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Логотип */
+  .logo {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  
+  .logo .lloyd {
+    color: #292929;
+  }
+  
+  .logo .jefferson {
+    color: #00b068;
+  }
+  
+  /* Бургер-кнопка */
+  .burger {
+    background: none;
+    border: none;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  /* SVG у бургер-кнопці */
+  .burger svg {
+    display: block;
+  }
+  
+  /* Навігація (спочатку прихована) */
+  .navigation {
+    display: none;
+    align-items: center;
+    gap: 40px; /* Відстань між елементами */
+  }
+  
+  .nav-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    color: #00b068;
+  }
+  .nav-link:focus {
+    color: #00b068;
+  }
+  
+  /* Адаптивність */
+   /* Мобільна версія: від 320px до 767px */
+@media (max-width: 767px) {
+    .burger {
+      display: flex; /* Показуємо бургер-кнопку */
+    }
+  
+    .navigation {
+      display: none; /* Ховаємо навігацію */
+    }
+  }
+  
+  /* Планшетна версія: від 768px до 1279px */
+  @media (min-width: 768px) and (max-width: 1279px) {
+    .burger {
+      display: none; /* Ховаємо бургер-кнопку */
+    }
+  
+    .navigation {
+      display: flex; /* Показуємо навігацію */
+    }
+  
+    .header {
+        padding: 32px; /* Змінюємо падінги */
+    }
+    .logo {
+        font-size: 32px;
+        letter-spacing: 0.05em;
+    }
+  }
+  
+  /* Десктопна версія: від 1280px */
+  @media (min-width: 1280px) {
+    .burger {
+      display: none; /* Переконуємося, що кнопка схована */
+    }
+  
+    .navigation {
+      display: flex; /* Навігація залишається видимою */
+    }
+  
+    .header {
+        padding: 32px;
+    }
+  
+    .nav-link {
+      font-size: 18px; /* Збільшуємо розмір шрифту */
+    }
+    .logo {
+        font-size: 32px;
+        letter-spacing: 0.05em;
+    }
+   
+  }
+
+
