@@ -64,7 +64,7 @@
 @media screen and (min-width: 768px){
 .aboutMe{
     padding-bottom: 0;}
-    
+
 .h2_aboutMe{
     padding-top: 124px;
     font-family: "Impact", sans-serif;
@@ -113,6 +113,7 @@
 }
 
 .role {grid-area: role;}
+
 }
     
 
