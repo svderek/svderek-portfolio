@@ -36,7 +36,7 @@ body{
 /* H1 */
 h1 {
     font-family: Impact;
-    font-size: 64px; 
+    font-size: 64px;
     letter-spacing: 1.8px ;
     line-height: 80px;
 }
@@ -164,4 +164,8 @@ h3 {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.title-highlight {
+    color: #00b068;
 }

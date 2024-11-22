@@ -1,0 +1,357 @@
+.wt-section h2 {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.wt-section p {
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .wt-section {
+    position: relative;
+    padding-top: 124px;
+    background-size: 336px 260px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-image: url('../img/work-together/wt-background-tab.png');
+  }
+
+  .wt-section h2 {
+    margin-bottom: 60px;
+  }
+
+  .wt-section p {
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    max-width: 488px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .wt-section {
+      background-image: url('../img/work-together/wt-background-tab-2x.png');
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wt-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .wt-section {
+    padding-top: 164px;
+    background-size: 40%;
+    background-position: 95% 84px;
+    background-image: url('../img/work-together/wt-background.png');
+    background-attachment: local;
+  }
+
+  .wt-section h2 {
+    margin-bottom: 80px;
+  }
+
+  .wt-section p {
+    margin-bottom: 120px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .wt-section {
+      background-image: url('../img/work-together/wt-background-2x.png');
+    }
+  }
+}
+
+.wt-contact-wrapper {
+  margin-bottom: 40px;
+}
+
+.wt-contact-info {
+  font-style: normal;
+}
+
+.wt-contact-info ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+}
+
+.wt-contact-info li {
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+.wt-icon {
+  margin-right: 16px;
+  stroke: #00b068;
+  fill: none;
+}
+
+.wt-contact-info a {
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.wt-contact-info a:hover,
+.wt-contact-info a:focus {
+  color: #00b068;
+}
+
+@media screen and (min-width: 768px) {
+  .wt-contact-info ul {
+    flex-direction: row;
+  }
+
+  .wt-contact-wrapper {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wt-contact-info {
+    max-width: 40%;
+    margin: 0;
+  }
+
+  .wt-contact-info ul {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .wt-contact-wrapper {
+    flex: 40%;
+    margin-bottom: 0;
+  }
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.wt-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  background-color: #e4e5e6;
+}
+
+#contactForm input {
+  padding: 12px 16px;
+}
+
+#contactForm textarea {
+  height: 120px;
+  resize: none;
+}
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+  color: #292929;
+}
+
+.wt-form-btn {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 24px;
+  background-color: #00b068;
+  color: #f0f0f0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  #contactForm {
+    align-items: start;
+  }
+
+  #contactForm input,
+  #contactForm textarea {
+    max-width: 704px;
+  }
+
+  .wt-form-btn {
+    max-width: 173px;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wt-form-container {
+    flex: 1 50%;
+    margin-top: auto;
+    max-width: 592px;
+  }
+}
+
+.wt-error-message {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #e74a3b;
+  display: none;
+  margin-top: 4px;
+  text-align: left;
+}
+
+.wt-success-icon {
+  top: 50%;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  fill: #00b068;
+  display: none;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+#contactForm input:invalid {
+  color: #e74a3b;
+}
+
+input:valid + .wt-success-icon {
+  display: block;
+}
+
+input:valid {
+  outline: none;
+  border-color: #bbb;
+  box-shadow: none;
+}
+
+textarea:valid {
+  outline: none;
+  border-color: #bbb;
+}
+
+input:invalid + .wt-success-icon {
+  display: none;
+}
+
+input:valid + .wt-success-icon + .wt-error-message {
+  display: none;
+}
+
+input:-webkit-autofill {
+  background-color: #e4e5e6 !important;
+  -webkit-box-shadow: 0 0 0 1000px #e4e5e6 inset;
+}
+
+.wt-form-btn:hover {
+  background-color: #009156;
+}
+
+.wt-form-btn:focus {
+  outline: 1px solid;
+  outline-offset: 4px;
+  background-color: #009156;
+}
+
+.wt-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.wt-popup-content {
+  background-color: #f0f0f0;
+  padding: 48px 32px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 320px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.wt-popup-content h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #00b068;
+  margin-bottom: 16px;
+}
+
+.wt-popup-content p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #292929;
+}
+
+.wt-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #292929;
+}
+
+.wt-close-btn:hover {
+  color: #009156;
+}
+
+@media screen and (min-width: 768px) {
+  .wt-popup-content {
+    max-width: 492px;
+    padding: 64px;
+  }
+}
