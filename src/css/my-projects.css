@@ -1,0 +1,111 @@
+.my-projects-heading {
+  font-weight: 400;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #292929;
+
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+}
+
+.accent {
+  color: #00b068;
+}
+
+.my-projects-technologies {
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  font-family: 'Poppins', sans-serif;
+}
+
+.my-projects-names {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.my-projects-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  background-color: #e4e5e6;
+
+  border: none;
+  border-radius: 8px;
+
+  padding: 12px 24px;
+  max-width: 125px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  gap: 8px;
+
+  cursor: pointer;
+}
+.my-projects-link:hover {
+  cursor: pointer;
+}
+
+.my-projects-img {
+  border-radius: 24px;
+}
+
+.icon-arrow {
+  fill: #00b068;
+}
+
+.load-more-btn {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  display: flex;
+
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.load-more-btn::after {
+  content: '';
+  display: block;
+  width: 119px;
+  height: 2px;
+  background-color: #28a745;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+my-projects-section {
+  padding: 0 20px;
+}
+
+.my-projects-card-row {
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
