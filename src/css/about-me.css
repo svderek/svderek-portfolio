@@ -93,9 +93,6 @@
     
 .bio {grid-area: bio;}
 
-/*.icon-decor{
-    filter: blur(5.4193549156188965px);
-}*/
 .ul_aboutMe{
     padding-bottom: 12px;
 }
@@ -122,16 +119,10 @@
  @media screen and (min-width: 1280px) {
 .container {
     max-width: 100%;
-    width: 100%;
-         /* Убедитесь, что он занимает всю ширину родителя */
-    padding: 0 20px;
-         /* Дополнительные отступы по краям, если нужно */
-    margin: 0 auto;
-         /* Центрируем, если требуется */}
+    width: 100%;   
+    padding: 0 20px; 
+    margin: 0 auto;}
     
-.aboutMe {
-           /* background-color: lightblue;
-            /* Временный фон для проверки */}
 .h2_aboutMe{
     padding-top: 164px;
 }
@@ -155,3 +146,4 @@
     padding-left: 136px;
 }
 }
+
