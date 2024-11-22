@@ -11,6 +11,10 @@ body {
     line-height: 1.5;
 }
 
+.accent{
+    color: #00B068;
+}
+
 /* H1 */
 h1 {
     font-family: Impact;
