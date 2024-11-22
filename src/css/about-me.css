@@ -147,15 +147,3 @@
 }
 }
 
-/* Темная тема при 1300px */
-
-@media screen and (min-width: 1300px) {
-.container{
-    background: #1e2023;
-    color: #f0f0f0;
-}
-.h2_aboutMe{color: #f0f0f0;}
-.h3_aboutMe {
-    color: #f0f0f0;
-}
-}
