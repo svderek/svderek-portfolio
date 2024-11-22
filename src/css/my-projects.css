@@ -37,6 +37,22 @@
   letter-spacing: 0.03em;
   color: #292929;
   font-family: 'Poppins', sans-serif;
+  text-decoration: none; /* Убирает стандартное подчёркивание ссылки */
+  background-color: #e4e5e6;
+
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.my-projects-link:hover {
+  cursor: pointer;
 }
 
 .my-projects-img {
