@@ -1,1 +1,43 @@
-<h1>Hero</h1>
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Hello, I am <span class="highlight-green">Fullstack Developer</span>
+      </h1>
+      <div class="desktop-hero-btn">
+        <div class="hero-btn-div">
+          <button class="hero-button">
+            <svg class="hero-arrow">
+              <use href="./img/hero/hero-arrow.svg#icon-Arrow-1"></use>
+            </svg>
+            <span class="text-hero-btn">Order the Project</span>
+          </button>
+        </div>
+        <p class="hero-description">
+          I work with people all over the world to create
+          <span class="highlight-green">impressive</span> and
+          <span class="highlight-green">functional websites</span> that reflect
+          each client’s unique personality.
+        </p>
+      </div>
+    </div>
+    <div class="hero-image">
+      <picture>
+        <source
+          srcset="
+            ./img/hero/hero-img-dp.jpg   1x,
+            ./img/hero/hero-img-dp2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+        />
+        <img src="./img/hero/hero-img-dp.jpg" alt="hero happy guy" />
+      </picture>
+    </div>
+  </div>
+  <ul class="social-links">
+    <li><a href="https://www.instagram.com/goitclub/">Instagram</a></li>
+    <li><a href="https://www.facebook.com/goITclub/">Facebook</a></li>
+    <li><a href="https://www.linkedin.com/school/goit-start-your-career-in-it">LinkedIn</a></li>
+    <li><a href="#">GitHub</a></li>
+  </ul>
+</section>
