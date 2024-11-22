@@ -11,6 +11,24 @@ body {
     line-height: 1.5;
 }
 
+body{
+    background-image: url("/bg-mobile.jpg");
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    body{
+        background-image: url("/bg-tablet.jpg");
+        background-size: 100%;
+    }
+}
+
+@media (min-width: 1280px){
+    body{
+        background-image: url("/bg-desktop.jpg");
+    }
+}
+
 .accent{
     color: #00B068;
 }
