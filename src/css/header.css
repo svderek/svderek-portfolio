@@ -11,9 +11,16 @@
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+  .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   
   /* Логотип */
   .logo {
+    display: inline-block;
+    margin: 0;
     font-family: "Impact", sans-serif;
     font-weight: 400;
     font-size: 24px;
