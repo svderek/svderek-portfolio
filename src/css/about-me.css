@@ -43,10 +43,80 @@
 .ul_2_aboutMe{
     padding-top: 32px;
     padding-bottom: 40px;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 12px;}
 
 .li_2_aboutMe{
     display: flex;
+    
     flex-direction: row;
-    gap: 12px;
 }
+.icon-dot {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    /* Избегает сжатия */
+}
+
+
+
+@media screen and (min-width: 768px){
+.aboutMe{
+    padding-bottom: 0;}
+
+.h2_aboutMe{
+    padding-top: 124px;
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 1.14815;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #292929;}
+
+.container{padding: 0;}
+
+.h3_aboutMe{
+    font-size: 36px;
+    line-height: 1.33333;
+    letter-spacing: 0.01em;
+}
+
+.aboutMe .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "photo bio"
+    "education role";}
+    
+.bio {grid-area: bio;
+    
+    }
+.ul_aboutMe{
+    padding-bottom: 140px;
+}
+    
+.photo {grid-area: photo;
+    padding-top: 406px;
+    padding-right: 32px;
+}
+.photo_aboutMe{
+    padding-bottom: 60px;
+}
+
+.education {grid-area: education;}
+    
+.ul_2_aboutMe{
+    padding-bottom: 124px;
+}
+
+.role {grid-area: role;}
+
+}
+    
+
+
+
+
