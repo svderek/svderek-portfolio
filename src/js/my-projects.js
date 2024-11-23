@@ -140,7 +140,7 @@ function createProjectHTML(projects) {
       <p class="my-projects-technologies">${projects.technologies}</p>
       <div class="my-projects-card-row">
         <h3 class="my-projects-names">${projects.title}</h3>
-        <a class="my-projects-link" href="${projects.link}">
+        <a class="my-projects-link" href="${projects.link}" target="_blank">
           Visit
           <svg class="icon-arrow" width="24" height="24">
             <use href="${arrowIcon}#icon-up-right-arrow"></use>
