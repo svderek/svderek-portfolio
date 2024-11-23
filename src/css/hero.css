@@ -58,6 +58,7 @@
 
 .text-hero-btn {
   margin-left: -112px;
+  color: var(--color-black);
 }
 .hero-arrow {
   position: absolute;
@@ -71,7 +72,7 @@
   font-size: 16px;
   line-height: 156%;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--color-black);
   margin: 0;
   text-transform: uppercase;
   text-align: left;
