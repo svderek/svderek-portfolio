@@ -52,6 +52,10 @@
   overflow: visible;
   margin-left: 155px;
 }
+.hero-button:hover {
+  background: #00b068;
+}
+
 .text-hero-btn {
   margin-left: -112px;
 }
@@ -93,6 +97,9 @@
   letter-spacing: 0.03em;
   color: #292929;
   padding: 52px;
+}
+.social-links:hover{
+  color: #00b068;
 }
 @media (min-width: 768px) {
   .hero-button {
