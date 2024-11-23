@@ -1,5 +1,6 @@
 import Accordion from "accordion-js";
 import 'accordion-js/dist/accordion.min.css';
+import "https://cdn.jsdelivr.net/npm/accordion-js@3.0.3/dist/accordion.min.js";
 
 // Initialize Accordion
 document.addEventListener("DOMContentLoaded", () => {
