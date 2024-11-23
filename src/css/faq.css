@@ -2,7 +2,7 @@
     padding-bottom: 80px;
 
 }
-.faq-container {
+.faq .container {
     max-width: 360px;
     padding-right: 20px;
     padding-left: 20px;
@@ -11,7 +11,7 @@
 
 }
 
-    .faq-title {
+.faq-title {
     line-height: 1.15;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -151,7 +151,7 @@
         padding-bottom: 124px;
     
     }
-    .faq-container {
+    .faq .container {
         max-width: 768px;
         padding-right: 32px;
         padding-left: 32px;
@@ -194,7 +194,7 @@
         right: 32px;
         top: 276px;
     }
-    .faq-container {
+    .faq .container {
         max-width: 1280px;
 
     }
