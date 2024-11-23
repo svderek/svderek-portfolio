@@ -1,7 +1,19 @@
 .tech-skills{
-    margin-bottom: 163px;
+    margin-bottom: 80px;
     overflow: hidden;
     height: 280px;
+}
+
+@media (min-width: 768px){
+    .tech-skills{
+        margin-bottom: 124px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .tech-skills {
+        margin-bottom: 164px;
+    }
 }
 
 
