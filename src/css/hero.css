@@ -51,9 +51,11 @@
   position: relative;
   overflow: visible;
   margin-left: 155px;
+  transition: color 0.2s ease;
 }
 .hero-button:hover {
   background: #00b068;
+  transition: color 0.2s ease;
 }
 
 .text-hero-btn {
@@ -98,7 +100,7 @@
   color: #292929;
   padding: 52px;
 }
-.social-links:hover{
+.social-links li:hover{
   color: #00b068;
 }
 @media (min-width: 768px) {
