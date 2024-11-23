@@ -1,0 +1,143 @@
+
+
+/* Хедер */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Логотип */
+  .logo {
+    display: inline-block;
+    margin: 0;
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  
+  .logo .lloyd {
+    color: #292929;
+  }
+  
+  .logo .jefferson {
+    color: #00b068;
+  }
+  
+  /* Бургер-кнопка */
+  .burger {
+    background: none;
+    border: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+ 
+  .burger svg {
+    display: block;
+  }
+  
+  
+  .navigation {
+    display: none;
+    align-items: center;
+    gap: 40px; 
+  }
+  
+  .nav-link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #292929;
+    text-decoration: none;
+  }
+  .nav-link:hover {
+    color: #00b068;
+  }
+  .nav-link:focus {
+    color: #00b068;
+  }
+  
+ 
+@media (max-width: 767px) { 
+    .burger {
+      display: flex;
+    }
+  
+    .navigation {
+      display: none; /* Ховаємо навігацію */
+    }
+  
+  
+}
+
+
+  
+    
+  @media (min-width: 768px) and (max-width: 1279px) {
+
+    .burger {
+      display: none; 
+      
+    }
+  
+    .navigation {
+      display: flex;
+      
+    }
+  
+    .header {
+        padding-top: 32px; 
+    padding-bottom: 32px;   
+ }
+    .logo {
+        font-size: 32px;
+        letter-spacing: 0.05em;
+    }
+  }
+  
+  
+  
+  @media (min-width: 1280px) {
+    .burger {
+      display: none; 
+      
+    }
+  
+    .navigation {
+      display: flex; /* Навігація залишається видимою */
+    }
+  
+    .header {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+  
+    .nav-link {
+      font-size: 18px; /* Збільшуємо розмір шрифту */
+    }
+    .logo {
+        font-size: 32px;
+        letter-spacing: 0.05em;
+    }
+   
+}
