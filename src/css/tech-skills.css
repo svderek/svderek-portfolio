@@ -16,6 +16,14 @@
     }
 }
 
+.tech-skills-dot-icon1{
+    fill: var(--color-accent-green);
+}
+
+.tech-skills-dot-icon1 {
+    fill: var(--color-black);
+}
+
 
 .marquee {
     overflow: hidden;
@@ -50,7 +58,7 @@
 .marquee__line svg{
     margin-right: 24px;
     margin-left: 24px;
-    margin-bottom: 10px;
+    margin-bottom: -5px;
 }
 
 .marquee2 {
@@ -89,7 +97,8 @@
 .marquee__line2 svg {
     margin-right: 24px;
     margin-left: 24px;
-    margin-bottom: 10px;
+    margin-bottom: -5px;
+    fill: var(--color-black);
 }
 
 @keyframes marqueeLine {

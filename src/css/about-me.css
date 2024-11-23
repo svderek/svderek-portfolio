@@ -38,6 +38,7 @@
     flex-direction: column;
     gap: 24px;
     padding-bottom: 40px;
+    color: var(--color-black);
 }
 
 .ul_2_aboutMe{
@@ -45,7 +46,9 @@
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
-    gap: 12px;}
+    gap: 12px;
+    color: var(--color-black);
+}
 
 .li_2_aboutMe{
     display: flex;
