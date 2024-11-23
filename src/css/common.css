@@ -3,6 +3,30 @@
     src: url('../../assets/fonts/impact.ttf') format('truetype');
 }
 
+:root {
+    --color-black: #292929;
+    --color-accent-green: #00B068;
+    --color-white: #F0F0F0;
+    --color-light-grey: #E4E5E6;
+    --color-light-accent: #BCDFD1;
+    --color-hover-green: #009156;
+    --color-error: #E74A3B;
+    --color-hover-grey: #BBBBBB;
+}
+
+[data-theme="dark"] {
+    --color-black: #1E2023;
+    --color-accent-green: #14C57C;
+    --color-white: #F0F0F0;
+    --color-charcoal: #2A2D32;
+    --color-dark-accent: #204136;
+    --color-hover-green: #009156;
+    --color-error: #E74A3B;
+    --color-hover-charcoal: #3B3F45;
+}
+
+
+
 /* Загальні стилі для всього тексту */
 body {
     font-family: 'Poppins', sans-serif;
@@ -30,7 +54,7 @@ body{
 }
 
 .accent{
-    color: #00B068;
+    color: var(--color-accent-green);
 }
 
 /* H1 */
@@ -164,3 +188,5 @@ h3 {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+

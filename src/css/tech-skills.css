@@ -7,14 +7,14 @@
 
 .marquee {
     overflow: hidden;
-    background-color: #BCDFD1;
+    background-color: var(--color-light-accent);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 36px;
     line-height: 133%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-    color: #292929;
+    color: var(--color-black);
     position: relative;
     z-index: 2;
 }
@@ -44,14 +44,14 @@
 .marquee2 {
     max-width: 100vw;
     overflow: hidden;
-    background-color: #E4E5E6;
+    background-color: var(--color-light-grey);
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 36px;
     line-height: 133%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
-    color: #00B068;
+    color: var(--color-accent-green);
     transform: rotate(2deg);
     position: relative;
     z-index: 1;

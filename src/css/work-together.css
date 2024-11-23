@@ -99,7 +99,7 @@
 
 .wt-icon {
   margin-right: 16px;
-  stroke: #00b068;
+  stroke: var(--color-accent-green);
   fill: none;
 }
 
@@ -111,7 +111,7 @@
 
 .wt-contact-info a:hover,
 .wt-contact-info a:focus {
-  color: #00b068;
+  color: var(--color-accent-green);
 }
 
 @media screen and (min-width: 768px) {
@@ -158,13 +158,13 @@
   width: 100%;
   max-width: 400px;
   padding: 16px;
-  border: 1px solid #bbb;
+  border: 1px solid var(--color-hover-grey);
   border-radius: 8px;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  background-color: #e4e5e6;
+  background-color: var(--color-light-grey);
 }
 
 #contactForm input {
@@ -178,15 +178,15 @@
 
 #contactForm input::placeholder,
 #contactForm textarea::placeholder {
-  color: #292929;
+  color: var(--color-black);
 }
 
 .wt-form-btn {
   width: 100%;
   max-width: 400px;
   padding: 12px 24px;
-  background-color: #00b068;
-  color: #f0f0f0;
+  background-color: var(--color-accent-green);
+  color: var(--color-white);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -229,7 +229,7 @@
   font-weight: 300;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  color: #e74a3b;
+  color: var(--color-error);
   display: none;
   margin-top: 4px;
   text-align: left;
@@ -240,14 +240,14 @@
   right: 10px;
   width: 16px;
   height: 16px;
-  fill: #00b068;
+  fill: var(--color-accent-green);
   display: none;
   position: absolute;
   transform: translateY(-50%);
 }
 
 #contactForm input:invalid {
-  color: #e74a3b;
+  color: var(--color-error);
 }
 
 input:valid + .wt-success-icon {
@@ -256,13 +256,13 @@ input:valid + .wt-success-icon {
 
 input:valid {
   outline: none;
-  border-color: #bbb;
+  border-color: var(--color-hover-grey);
   box-shadow: none;
 }
 
 textarea:valid {
   outline: none;
-  border-color: #bbb;
+  border-color: var(--color-hover-grey);
 }
 
 input:invalid + .wt-success-icon {
@@ -274,18 +274,18 @@ input:valid + .wt-success-icon + .wt-error-message {
 }
 
 input:-webkit-autofill {
-  background-color: #e4e5e6 !important;
-  -webkit-box-shadow: 0 0 0 1000px #e4e5e6 inset;
+  background-color: var(--color-light-grey) !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--color-light-grey) inset;
 }
 
 .wt-form-btn:hover {
-  background-color: #009156;
+  background-color: var(--color-hover-green);
 }
 
 .wt-form-btn:focus {
   outline: 1px solid;
   outline-offset: 4px;
-  background-color: #009156;
+  background-color: var(--color-hover-green);
 }
 
 .wt-popup {
@@ -302,7 +302,7 @@ input:-webkit-autofill {
 }
 
 .wt-popup-content {
-  background-color: #f0f0f0;
+  background-color: var(--color-white);
   padding: 48px 32px;
   border-radius: 16px;
   text-align: center;
@@ -318,7 +318,7 @@ input:-webkit-autofill {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: #00b068;
+  color: var(--color-accent-green);
   margin-bottom: 16px;
 }
 
@@ -328,7 +328,7 @@ input:-webkit-autofill {
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
-  color: #292929;
+  color: var(--color-black);
 }
 
 .wt-close-btn {
@@ -342,11 +342,11 @@ input:-webkit-autofill {
   border: none;
   font-size: 32px;
   cursor: pointer;
-  color: #292929;
+  color: var(--color-black);
 }
 
 .wt-close-btn:hover {
-  color: #009156;
+  color: var(--color-hover-green);
 }
 
 @media screen and (min-width: 768px) {

@@ -10,14 +10,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: right;
-    color: #292929;
+    color: var(--color-black);
     display: flex;
     padding-top: 79px;
     padding-bottom: 40px;
     }
 
 .span_h2_aboutMe{
-    color: #00B068;}
+    color: var(--color-accent-green);}
 
 .photo_aboutMe{
     padding-bottom: 40px;
@@ -29,7 +29,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #292929;
+    color: var(--color-black);
     }
 
 .ul_aboutMe{
@@ -74,7 +74,7 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     text-align: right;
-    color: #292929;}
+    color: var(--color-black);}
 
 
 .h3_aboutMe{
