@@ -28,13 +28,10 @@
     text-transform: uppercase;
   }
   
-  .logo .lloyd {
-    color: #292929;
+  .logo {
+    color: var(--color-black);
   }
   
-  .logo .jefferson {
-    color: #00b068;
-  }
   
   /* Бургер-кнопка */
   .burger {
@@ -70,10 +67,10 @@
     text-decoration: none;
   }
   .nav-link:hover {
-    color: #00b068;
+    color: var(--color-accent-green);
   }
   .nav-link:focus {
-    color: #00b068;
+    color: var(--color-accent-green);
   }
   
  
