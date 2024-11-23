@@ -24,15 +24,12 @@
   gap: 40px;
   align-items: center;
 }
-.my-projects-item {
-}
-.my-projects-item:last-child {
-}
+
 .my-projects-technologies {
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--color-black);
   font-family: 'Poppins', sans-serif;
 }
 
@@ -42,7 +39,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--color-black);
   padding-bottom: 16px;
 }
 
@@ -51,10 +48,10 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
+  color: var(--color-black);
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  background-color: #e4e5e6;
+  background-color: var(--color-light-grey);
   text-transform: uppercase;
 
   border: none;
@@ -75,7 +72,7 @@
 .my-projects-link:hover,
 .my-projects-link:focus {
   cursor: pointer;
-  background-color: #bbb;
+  background-color: var(--color-hover-grey);
 }
 
 .my-projects-img {
@@ -83,15 +80,15 @@
 }
 
 .icon-arrow {
-  fill: #00b068;
+  fill: var(--color-accent-green);
   stroke-width: 2px;
-  stroke: #00b068;
+  stroke: var(--color-accent-green);
 }
 
 .load-more-btn {
   background: none;
   border: none;
-  color: black;
+  color: var(--color-black);
   cursor: pointer;
   position: relative;
   padding: 0;
@@ -100,7 +97,7 @@
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--color-black);
   display: flex;
 
   margin: 0 auto;
@@ -110,14 +107,14 @@
 
 .load-more-btn:hover,
 .load-more-btn:focus {
-  color: #00b068;
+  color: var(--color-accent-green);
 }
 .load-more-btn::after {
   content: '';
   display: block;
   width: 119px;
   height: 2px;
-  background-color: #00b068;
+  background-color: var(--color-accent-green);
   transition: width 0.3s ease;
   position: absolute;
   bottom: -4px;
