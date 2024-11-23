@@ -1,0 +1,244 @@
+.faq {
+    padding-bottom: 80px;
+
+}
+
+.container {
+    max-width: 360px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+    .faq-title {
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--color-black);
+    margin-bottom: 40px;
+    max-width: 320px;
+}
+
+.faq-break {
+    color: var(--color-accent-green);
+}
+
+
+.ac-header {
+    font-weight: normal; 
+    background-color: var(--color-light-grey);
+}
+
+.ac-header-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-black);
+    max-width: 224px;
+    padding-left: 16px;
+    background-color: transparent;
+
+}
+
+.ac.is-active > .ac-panel {
+    background-color: var(--color-light-accent);
+    border-radius: 0 0 16px 16px;
+}
+
+.faq-ac-text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--color-black);
+    padding-left: 24px;
+    padding-right: 24px;
+    text-align: left;
+    padding-bottom: 28px;
+    
+}
+
+.ac {
+    background-color: transparent;
+}
+.ac.is-active>.ac-header .faq-ac-trigger {
+    background-color: var(--color-light-accent);
+    border-radius: 16px 16px 0 0;
+} 
+
+.ac.is-active {
+    border-radius: 16px;
+}
+
+.ac.is-active>.ac-header {
+    border-bottom: none;
+    border-radius: 16px 16px 0 0;
+}
+
+.ac.is-active>.ac-header .faq-ac-trigger::after {
+    content: "";
+    display: none;
+}
+
+
+.ac .faq-ac-trigger::after {
+    content: "";
+    display: none;
+}
+
+.ac-trigger {
+    position: relative;
+    background-color: transparent;
+}
+
+.ac {
+    background-color: transparent;
+}
+
+@media (max-width: 360px) {
+    .icon-1 {
+        display: none;
+        position: absolute;
+        top: 32px;
+        right: 28px;
+    
+     
+    }
+    
+    .icon-2 {
+        position: absolute;
+        top: 32px;
+        right: 28px;
+    }
+}
+
+@media (min-width: 361px) {
+    .icon-1 {
+        display: none;
+        position: absolute;
+        top: 28px;
+        right: 28px;
+    
+     
+    }
+    
+    .icon-2 {
+        position: absolute;
+        top: 28px;
+        right: 28px;
+    }
+}
+
+.icon-1 {
+    display: none;
+}
+
+.icon-2 {
+    position: absolute;
+}
+.ac.is-active>.ac-header .ac-trigger .icon-1 {
+    display: block;
+}
+
+.ac.is-active>.ac-header .ac-trigger .icon-2 {
+    display: none;
+}
+
+
+@media (min-width: 361px) {
+    .faq {
+        padding-bottom: 124px;
+    
+    }
+    .container {
+        max-width: 768px;
+        padding-right: 32px;
+        padding-left: 32px;
+    }
+
+    .faq-title {
+        text-align: left;
+        margin-bottom: 60px;
+        max-width: 592px;
+        }
+
+    .ac-header-button {
+        max-width: 704px;
+     }
+           
+    .ac-panel {
+        max-width: 704px;  
+    }
+  
+}
+
+@media (min-width: 1280px) {
+
+    .faq-title {
+        font-weight: 400;
+        font-size: 108px;
+        margin-bottom: 0;
+     
+    }
+    .faq {
+        position: relative;
+        padding-bottom: 602px;
+        
+    
+    }
+
+    .accordion-container {
+        position: absolute;
+        right: 32px;
+        top: 276px;
+    }
+    .container {
+        max-width: 1280px;
+
+    }
+
+    .ac-header{
+        max-width: 592px;
+    }
+
+    .ac-header-button {
+        max-width: 592px;
+        }
+        
+
+    .ac-header-button {
+        max-width: 488px;
+    }
+    .faq-ac-text {
+        max-width: 544px;
+    }
+    
+    .faq {
+        background-repeat: no-repeat;
+        background-image: url('../img/faq/faq-background-dp.png');
+        background-size: 526px;
+        background-position: 100px 400px;
+      }
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+      .wt-section {
+        background-image: url('../img/faq/faq-background-dp2x.png');
+      }
+    }
+  }
+
+
+
+
+.ac-header {
+    border-bottom: 1px solid var(--color-light-grey);
+    font-weight: normal;
+
+    
+}
