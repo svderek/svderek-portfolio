@@ -1,9 +1,11 @@
 .wt-section h2 {
+  color: var(--color-black);
   text-align: left;
   margin-bottom: 40px;
 }
 
 .wt-section p {
+  color: var(--color-black);
   margin-bottom: 32px;
   font-size: 18px;
   line-height: 1.5;
@@ -33,8 +35,8 @@
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
     .wt-section {
       background-image: url('../img/work-together/wt-background-tab-2x.png');
     }
@@ -65,8 +67,8 @@
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
     .wt-section {
       background-image: url('../img/work-together/wt-background-2x.png');
     }
@@ -104,6 +106,7 @@
 }
 
 .wt-contact-info a {
+  color: var(--color-black);
   text-decoration: none;
   font-size: 16px;
   transition: background-color 0.3s;
@@ -155,10 +158,11 @@
 
 #contactForm input,
 #contactForm textarea {
+  color: var(--color-black);
   width: 100%;
   max-width: 400px;
   padding: 16px;
-  border: 1px solid var(--color-hover-grey);
+  border: 1px solid var(--color-input-border);
   border-radius: 8px;
   font-weight: 300;
   font-size: 16px;
@@ -274,8 +278,13 @@ input:valid + .wt-success-icon + .wt-error-message {
 }
 
 input:-webkit-autofill {
+  -webkit-text-fill-color: var(--color-black);
   background-color: var(--color-light-grey) !important;
   -webkit-box-shadow: 0 0 0 1000px var(--color-light-grey) inset;
+}
+
+textarea:-webkit-autofill {
+  -webkit-text-fill-color: var(--color-black);
 }
 
 .wt-form-btn:hover {
@@ -302,7 +311,7 @@ input:-webkit-autofill {
 }
 
 .wt-popup-content {
-  background-color: var(--color-white);
+  background-color: var(--color-charcoal);
   padding: 48px 32px;
   border-radius: 16px;
   text-align: center;
