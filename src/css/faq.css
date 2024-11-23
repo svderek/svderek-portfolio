@@ -2,7 +2,6 @@
     padding-bottom: 80px;
 
 }
-
 .container {
     max-width: 360px;
     padding-right: 20px;
@@ -92,12 +91,9 @@
 
 .ac-trigger {
     position: relative;
-    background-color: transparent;
+
 }
 
-.ac {
-    background-color: transparent;
-}
 
 @media (max-width: 360px) {
     .icon-1 {
