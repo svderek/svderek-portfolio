@@ -2,16 +2,32 @@
   font-weight: 400;
   white-space: nowrap;
   text-transform: uppercase;
-  color: #292929;
+  color: var(--color-black);
 
   line-height: 1.23077;
   letter-spacing: 0.03em;
+
+  display: flex;
+
+  justify-content: center;
+  gap: 0.8rem;
+  align-items: center;
 }
 
 .accent {
-  color: #00b068;
+  color: var(--color-accent-green);
 }
-
+.my-projects-list {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.my-projects-item {
+}
+.my-projects-item:last-child {
+}
 .my-projects-technologies {
   font-weight: 300;
   line-height: 1.5;
@@ -27,6 +43,7 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #292929;
+  padding-bottom: 16px;
 }
 
 .my-projects-link {
@@ -38,6 +55,7 @@
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
   background-color: #e4e5e6;
+  text-transform: uppercase;
 
   border: none;
   border-radius: 8px;
@@ -52,9 +70,12 @@
   gap: 8px;
 
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.my-projects-link:hover {
+.my-projects-link:hover,
+.my-projects-link:focus {
   cursor: pointer;
+  background-color: #bbb;
 }
 
 .my-projects-img {
@@ -63,6 +84,8 @@
 
 .icon-arrow {
   fill: #00b068;
+  stroke-width: 2px;
+  stroke: #00b068;
 }
 
 .load-more-btn {
@@ -82,30 +105,61 @@
 
   margin: 0 auto;
   margin-top: 40px;
+  transition: color 0.3s ease;
 }
 
+.load-more-btn:hover,
+.load-more-btn:focus {
+  color: #00b068;
+}
 .load-more-btn::after {
   content: '';
   display: block;
   width: 119px;
   height: 2px;
-  background-color: #28a745;
+  background-color: #00b068;
   transition: width 0.3s ease;
   position: absolute;
   bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
 }
-
-my-projects-section {
-  padding: 0 20px;
+.my-projects-section {
+  margin-bottom: 80px;
 }
-
-.my-projects-card-row {
-  .footer-row {
+@media (min-width: 768px) {
+  .my-projects-card-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 16px;
+  }
+  .my-projects-names {
+    padding-bottom: 0;
+  }
+
+  .my-projects-heading {
+    gap: 1.2rem;
+  }
+  .my-projects-section {
+    margin-bottom: 124px;
+  }
+  .my-projects-list {
+    gap: 60px;
+  }
+  .my-projects-list {
+    padding-top: 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .my-projects-section {
+    margin-bottom: 164px;
+  }
+  .my-projects-list {
+    gap: 80px;
+  }
+  .my-projects-list {
+    padding-top: 80px;
   }
 }
