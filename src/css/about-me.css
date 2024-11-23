@@ -76,7 +76,6 @@
     text-align: right;
     color: #292929;}
 
-.container{padding: 0;}
 
 .h3_aboutMe{
     font-size: 36px;
@@ -116,34 +115,29 @@
 
 
 
- @media screen and (min-width: 1280px) {
-.container {
-    /*max-width: 100%;*/
-    /*width: 100%;   */
-    padding: 0 20px;
-    margin: 0 auto;}
+@media screen and (min-width: 1280px) {
     
-.h2_aboutMe{
-    padding-top: 164px;
-}
-.photo{
-    padding-top: 280px;
-    padding-left: 219px;
-    padding-bottom: 80px;
-}
-.photo_aboutMe{
-    padding: 0;
-    width: 384px;
-    height: 448px;
-}
-.bio{
-    padding-left: 136px;
-}
-.education{
-    padding-left: 219px;
-}
-.role{
-    padding-left: 136px;
-}
+    .h2_aboutMe{
+        padding-top: 164px;
+    }
+    .photo{
+        padding-top: 280px;
+        padding-left: 219px;
+        padding-bottom: 80px;
+    }
+    .photo_aboutMe{
+        padding: 0;
+        width: 384px;
+        height: 448px;
+    }
+    .bio{
+        padding-left: 136px;
+    }
+    .education{
+        padding-left: 219px;
+    }
+    .role{
+        padding-left: 136px;
+    }
 }
 
