@@ -18,7 +18,7 @@
     --color-hover-green: #009156;
     --color-error: #e74a3b;
     --color-hover-grey: #bbbbbb;
-  --color-input-border: #bbbbbb;
+    --color-input-border: #bbbbbb;
 }
 
 [data-theme='dark'] {
@@ -32,7 +32,7 @@
     --color-accent-green: #14c57c;
     --color-white: #f0f0f0;
     --color-charcoal: #2a2d32;
-  --color-input-border: none;
+    --color-input-border: none;
     --color-error: #e74a3b;
     --color-hover-charcoal: #3b3f45;
 }
