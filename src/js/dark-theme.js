@@ -8,7 +8,7 @@ function updateTheme(theme) {
 
   const newIcon =
     theme === 'light'
-      ? './img/light-theme-btn.svg': './img/dark-theme-btn.svg';
+      ? './public/light-theme-btn.svg': './public/dark-theme-btn.svg';
   buttonIcon.classList.add('fade-out');
   setTimeout(() => {
     buttonIcon.src = newIcon;
