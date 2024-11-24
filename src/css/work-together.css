@@ -287,6 +287,7 @@ input:-webkit-autofill {
   -webkit-text-fill-color: var(--color-black);
   background-color: var(--color-light-grey) !important;
   -webkit-box-shadow: 0 0 0 1000px var(--color-light-grey) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 textarea:-webkit-autofill {
@@ -344,6 +345,11 @@ textarea:-webkit-autofill {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--color-black);
+}
+
+body.wt-popup-open {
+  overflow: hidden;
+  padding-right: var(--scrollbar-width, 0px); /* Prevents layout shift */
 }
 
 .wt-close-btn {
