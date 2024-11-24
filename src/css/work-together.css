@@ -1,4 +1,4 @@
-.wt-section{
+.wt-section {
   margin-bottom: 80px;
 }
 
@@ -115,7 +115,7 @@
   color: var(--color-black);
   text-decoration: none;
   font-size: 16px;
-  transition: background-color 0.3s;
+  transition: color 0.3s;
 }
 
 .wt-contact-info a:hover,

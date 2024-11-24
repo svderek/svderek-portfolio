@@ -1,59 +1,58 @@
 @font-face {
-    font-family: 'Impact';
-    src: url('../../assets/fonts/impact.ttf') format('truetype');
+  font-family: 'Impact';
+  src: url('../../assets/fonts/impact.ttf') format('truetype');
 }
 
 :root {
-    --background-color: #f0f0f0;
-    --color-black: #292929;
-    --color-light-accent: #bcdfd1;
-    --hero-button-color: #bcdfd1;
-    --color-light-grey: #e4e5e6;
-    --color-hover-green: #009156;
-    --color-faq-border:#e4e5e6;
-    --color-accent-green: #00b068;
-    --color-charcoal: #f0f0f0;
-    --color-white: #f0f0f0;
-    --color-light-grey: #e4e5e6;
-    --color-light-accent: #bcdfd1;
-    --color-hover-green: #009156;
-    --color-error: #e74a3b;
-    --color-hover-grey: #bbbbbb;
-    --color-input-border: #bbbbbb;
+  --background-color: #f0f0f0;
+  --color-black: #292929;
+  --color-light-accent: #bcdfd1;
+  --hero-button-color: #bcdfd1;
+  --color-light-grey: #e4e5e6;
+  --color-hover-green: #009156;
+  --color-faq-border: #e4e5e6;
+  --color-accent-green: #00b068;
+  --color-charcoal: #f0f0f0;
+  --color-white: #f0f0f0;
+  --color-light-grey: #e4e5e6;
+  --color-light-accent: #bcdfd1;
+  --color-hover-green: #009156;
+  --color-error: #e74a3b;
+  --color-hover-grey: #bbbbbb;
+  --color-input-border: #bbbbbb;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 [data-theme='dark'] {
-    --background-color: #1e2023;
-    --color-black: #f0f0f0;
-    --color-light-accent: #204136;
-    --hero-button-color: #14c57c;
-    --color-light-grey: #2a2d32;
-    --color-hover-green: #009156;
-    --color-faq-border: #f0f0f0;
+  --background-color: #1e2023;
+  --color-black: #f0f0f0;
+  --color-light-accent: #204136;
+  --hero-button-color: #14c57c;
+  --color-light-grey: #2a2d32;
+  --color-hover-green: #009156;
+  --color-faq-border: #f0f0f0;
 
-    --color-blackk: #1e2023;
-    --color-accent-green: #14c57c;
-    --color-white: #f0f0f0;
-    --color-charcoal: #2a2d32;
-    --color-input-border: none;
-    --color-error: #e74a3b;
-    --color-hover-charcoal: #3b3f45;
+  --color-blackk: #1e2023;
+  --color-accent-green: #14c57c;
+  --color-white: #f0f0f0;
+  --color-charcoal: #2a2d32;
+  --color-input-border: none;
+  --color-error: #e74a3b;
+  --color-hover-charcoal: #3b3f45;
 }
-
-
 
 /* Загальні стилі для всього тексту */
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.5;
-    background-color: var(--background-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
-.accent{
-    color: var(--color-accent-green);
+.accent {
+  color: var(--color-accent-green);
 }
 
 /*section{
@@ -76,134 +75,132 @@ body {
 
 /* H1 */
 h1 {
-    font-family: Impact;
-    font-size: 64px;
-    letter-spacing: 1.8px ;
-    line-height: 80px;
+  font-family: Impact;
+  font-size: 64px;
+  letter-spacing: 1.8px;
+  line-height: 80px;
 }
 
 @media (min-width: 768px) {
-    h1 {
-        font-size: 136px;
-        line-height: 156px;
-    }
+  h1 {
+    font-size: 136px;
+    line-height: 156px;
+  }
 }
 
 @media (min-width: 1280px) {
-    h1 {
-        font-size: 136px;
-    }
+  h1 {
+    font-size: 136px;
+  }
 }
 
 /* H2 */
 h2 {
-    font-family: 'Impact', sans-serif;
-    font-size: 52px;
-    letter-spacing: 1.8px;
-    line-height: 64px;
+  font-family: 'Impact', sans-serif;
+  font-size: 52px;
+  letter-spacing: 1.8px;
+  line-height: 64px;
 }
 
 @media (min-width: 768px) {
-    h2 {
-        font-size: 108px;
-        line-height: 124px;
-    }
+  h2 {
+    font-size: 108px;
+    line-height: 124px;
+  }
 }
 
 @media (min-width: 1280px) {
-    h2 {
-        font-size: 108px;
-    }
+  h2 {
+    font-size: 108px;
+  }
 }
 
 /* H3 */
 h3 {
-    font-family: 'Poppins Medium', sans-serif;
-    font-size: 32px;
-    letter-spacing: 0.5px;
-    line-height: 40px;
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.5px;
+  line-height: 40px;
 }
 
 @media (min-width: 768px) {
-    h3 {
-        font-size: 36px;
-        line-height: 48px;
-    }
+  h3 {
+    font-size: 36px;
+    line-height: 48px;
+  }
 }
 
 @media (min-width: 1280px) {
-    h3 {
-        font-size: 36px;
-    }
+  h3 {
+    font-size: 36px;
+  }
 }
 
 /* Body 1 (Light) */
 .body1-light {
-    font-family: 'Poppins Light', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 24px;
+  font-family: 'Poppins Light', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
 }
 
 /* Body 1 (Medium) */
 .body1-medium {
-    font-family: 'Poppins Medium', sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.2px;
-    line-height: 24px;
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 24px;
 }
 
 /* Caption */
 .caption {
-    font-family: 'Poppins Regular', sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    line-height: 28px;
+  font-family: 'Poppins Regular', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 28px;
 }
 
 @media (min-width: 768px) {
-    .caption {
-        font-size: 20px;
-        line-height: 32px;
-    }
+  .caption {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .container {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    box-sizing: border-box;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 @media (min-width: 360px) {
-    .container {
-        max-width: 320px;
-    }
+  .container {
+    max-width: 320px;
+  }
 }
 
 @media (min-width: 768px) {
-    .container {
-        max-width: 704px;
-    }
+  .container {
+    max-width: 704px;
+  }
 }
 
 @media (min-width: 1280px) {
-    .container {
-        max-width: 1216px;
-    }
+  .container {
+    max-width: 1216px;
+  }
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
-
