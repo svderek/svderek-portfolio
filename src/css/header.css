@@ -76,11 +76,11 @@
 #themeToggleButton {
   background: none;
   border: none;
-  cursor: pointer;
   padding: 0;
+  cursor: pointer;
 }
 
-#themeToggleButton img {
+#themeIcon svg {
   width: 48px;
   height: 24px;
 }
