@@ -358,6 +358,7 @@ textarea:-webkit-autofill {
   font-size: 32px;
   cursor: pointer;
   color: var(--color-black);
+  transition: color 0.2s ease;
 }
 
 .wt-close-btn:hover {
