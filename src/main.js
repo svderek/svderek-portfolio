@@ -10,3 +10,4 @@ import './js/work-together.js';
 import './js/footer.js';
 import './js/mobile-menu.js';
 import './js/dark-theme.js';
+import './js/svg-faq.js';
