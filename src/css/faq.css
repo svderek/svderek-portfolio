@@ -3,9 +3,7 @@
 
 }
 .faq .container {
-    max-width: 360px;
-    padding-right: 20px;
-    padding-left: 20px;
+    max-width: 320px;
     flex-direction: column;
     display: flex;
 
@@ -193,7 +191,7 @@
 
     .accordion-container {
         position: absolute;
-        right: 32px;
+        right: 76px;
         top: 276px;
     }
     .faq .container {
