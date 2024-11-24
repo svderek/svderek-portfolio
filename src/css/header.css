@@ -72,7 +72,31 @@
   .nav-link:focus {
     color: var(--color-accent-green);
   }
+    .theme-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   
+    .theme-button img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+  
+    .theme-button img.fade-out {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  
+    .theme-button img.fade-in {
+      opacity: 1;
+      transform: scale(1);
+    }
  
 @media (max-width: 767px) { 
     .burger {

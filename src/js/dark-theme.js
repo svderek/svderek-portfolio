@@ -1,24 +1,33 @@
-function toggleTheme() {
-    const root = document.documentElement;
-    const currentTheme = root.getAttribute('data-theme');
-    if (currentTheme === 'light') {
-        root.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-    } else {
-        root.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
-    }
-    }
-    document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme');
-    const root = document.documentElement;
-    if (savedTheme) {
-        root.setAttribute('data-theme', savedTheme);
-    } else {
-        root.setAttribute('data-theme', 'light');
-    }
-});
+const themeButton = document.getElementById('themeToggleButton');
+const buttonIcon = document.getElementById('buttonIcon');
 
-document
-    .querySelector('#themeToggleButton')
-    .addEventListener('click', toggleTheme);
+function updateTheme(theme) {
+  const root = document.documentElement;
+  root.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+
+  const newIcon =
+    theme === 'light' ? './img/light-theme-btn.svg' : './img/dark-theme-btn.svg';
+  buttonIcon.classList.add('fade-out');
+  setTimeout(() => {
+    buttonIcon.src = newIcon;
+    buttonIcon.classList.remove('fade-out');
+    buttonIcon.classList.add('fade-in');
+    setTimeout(() => buttonIcon.classList.remove('fade-in'), 300);
+  }, 300);
+}
+
+
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  updateTheme(newTheme);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  updateTheme(savedTheme);
+
+
+  themeButton.addEventListener('click', toggleTheme);
+});
