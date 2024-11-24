@@ -1,4 +1,4 @@
-.wt-section{
+.wt-section {
   margin-bottom: 80px;
 }
 
@@ -344,6 +344,11 @@ textarea:-webkit-autofill {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--color-black);
+}
+
+body.wt-popup-open {
+  overflow: hidden;
+  padding-right: var(--scrollbar-width, 0px); /* Prevents layout shift */
 }
 
 .wt-close-btn {

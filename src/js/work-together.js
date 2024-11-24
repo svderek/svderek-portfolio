@@ -7,17 +7,40 @@ document.addEventListener('DOMContentLoaded', () => {
   const popup = document.querySelector('.wt-popup');
   const API_URL = 'https://portfolio-js.b.goit.study/api/requests';
 
+  const togglePopup = show => {
+    if (show) {
+      const scrollbarWidth =
+        window.innerWidth - document.documentElement.clientWidth;
+      document.documentElement.style.setProperty(
+        '--scrollbar-width',
+        `${scrollbarWidth}px`
+      );
+      document.body.classList.add('wt-popup-open');
+      popup.style.display = 'flex';
+    } else {
+      document.body.classList.remove('wt-popup-open');
+      popup.style.display = 'none';
+      document.documentElement.style.setProperty('--scrollbar-width', '0px');
+    }
+  };
+
   document.querySelector('.wt-close-btn').addEventListener('click', () => {
-    popup.style.display = 'none';
+    togglePopup(false);
   });
 
-  window.addEventListener('click', (e) => {
+  window.addEventListener('click', e => {
     if (e.target === popup) {
-      popup.style.display = 'none';
+      togglePopup(false);
     }
   });
 
-  contactForm.addEventListener('submit', async (e) => {
+  window.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      togglePopup(false);
+    }
+  });
+
+  contactForm.addEventListener('submit', async e => {
     e.preventDefault();
 
     const email = document.getElementById('email').value;
@@ -32,12 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await axios.post(API_URL, requestBody, {
         headers: {
           'Content-Type': 'application/json',
-          'Accept': 'application/json',
+          Accept: 'application/json',
         },
       });
 
       if (response.status === 201) {
-        popup.style.display = 'flex';
+        togglePopup(true);
         contactForm.reset();
       } else {
         throw new Error('Unexpected response status');
