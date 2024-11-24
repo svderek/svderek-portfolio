@@ -4,7 +4,6 @@
   /*min-width: 0;*/
 }
 
-
 @media (min-width: 768px) {
   .reviews-section {
     /*padding: 0px 32px 72px;*/
@@ -31,7 +30,6 @@
   text-align: center;
   width: 100%;
 }
-
 
 @media (min-width: 768px) {
   .reviews-section-title {
@@ -135,12 +133,14 @@
   bottom: 10px;
   top: auto;
   transform: translateY(0);
+  transition: border 0.3s ease;
 }
 .swiper-button-prev {
   left: 10px;
   bottom: 10px;
   top: auto;
   transform: translateY(0);
+  transition: border 0.3s ease;
 }
 
 .swiper-button-prev:hover,
