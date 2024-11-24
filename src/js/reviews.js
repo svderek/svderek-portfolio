@@ -1,8 +1,45 @@
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.css';
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   const list = document.querySelector('.reviews-list');
+
+  function createMarkup(arr) {
+    return arr
+      .map(
+        ({ author, avatar_url, review }) => `
+        <li class="swiper-slide reviews-list-item">
+          <p class="reviews-item-text">${review}</p>
+          <div class="img-title-wraper">
+            <img class="reviews-item-img"
+                 src=${avatar_url}
+                 alt="image of ${author}"
+                 width="40"
+                 height="40">
+            <h3 class="reviews-item-title">${author}</h3>
+          </div>
+        </li>`
+      )
+      .join('');
+  }
+
+  function setEqualHeight() {
+    const slides = document.querySelectorAll('.swiper-slide');
+    if (window.innerWidth >= 1280) {
+      let maxHeight = 0;
+      slides.forEach(slide => {
+        const slideHeight = slide.offsetHeight;
+        if (slideHeight > maxHeight) maxHeight = slideHeight;
+      });
+      slides.forEach(slide => {
+        slide.style.height = `${maxHeight}px`;
+      });
+    } else {
+      slides.forEach(slide => {
+        slide.style.height = 'auto';
+      });
+    }
+  }
 
   fetch('https://portfolio-js.b.goit.study/api/reviews')
     .then(response => {
@@ -11,50 +48,30 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       return response.json();
     })
-
     .then(data => {
       list.insertAdjacentHTML('beforeend', createMarkup(data));
 
       const swiper = new Swiper('.swiper-container', {
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        autoHeight: true,
         slidesPerView: 1,
         spaceBetween: 32,
-        slidesPerGroup: 1,
         breakpoints: {
           1280: { slidesPerView: 2, spaceBetween: 32, slidesPerGroup: 2 },
         },
-
-        keyboard: {
-          enabled: true,
-          onlyInViewport: true,
-          pageUpDown: true,
-        },
         simulateTouch: true,
-        on: {
-          reachEnd: function () {
-            document
-              .querySelector('.swiper-button-next')
-              .classList.add('disabled');
-          },
-          reachBeginning: function () {
-            document
-              .querySelector('.swiper-button-prev')
-              .classList.add('disabled');
-          },
-          fromEdge: function () {
-            document
-              .querySelector('.swiper-button-next')
-              .classList.remove('disabled');
-            document
-              .querySelector('.swiper-button-prev')
-              .classList.remove('disabled');
-          },
-        },
+        autoHeight: true,
       });
+
+      const nextButton = document.querySelector('#swiper-button-next');
+      const prevButton = document.querySelector('#swiper-button-prev');
+
+      nextButton.addEventListener('click', () => {
+        swiper.slideNext();
+      });
+
+      prevButton.addEventListener('click', () => {
+        swiper.slidePrev();
+      });
+
       setEqualHeight();
       window.addEventListener('resize', setEqualHeight);
     })
@@ -62,66 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
       list.insertAdjacentHTML(
         'beforeend',
         `<li>
-      <p>${error}</p>
-      </li>
-      `
+          <p>${error.message}</p>
+        </li>`
       );
-      console.log(error);
     });
-
-  function createMarkup(arr) {
-    return arr
-      .map(
-        ({ author, avatar_url, review }) => `
-     <li class="swiper-slide reviews-list-item">
-    <p class="reviews-item-text">${review}</p>
-    <div class="img-title-wraper">
-    <img class="reviews-item-img"
-    src=${avatar_url}
-    alt="image of ${author}"
-    width="40"
-    height="40">
-    <h3 class="reviews-item-title">${author}</h3>
-    </div>
-    </li>
-      `
-      )
-      .join('');
-  }
 });
-
-/*function setEqualHeight() {
-  const slides = document.querySelectorAll('.swiper-slide');
-  let maxHeight = 0;
-  slides.forEach(slide => {
-    let slideHeight = slide.offsetHeight;
-    if (slideHeight > maxHeight) {
-      maxHeight = slideHeight;
-    }
-  });
-  slides.forEach(slide => {
-    slide.style.height = `${maxHeight}px`;
-  });
-}*/
-
-function setEqualHeight() {
-  if (window.innerWidth >= 1280) {
-    const slides = document.querySelectorAll('.swiper-slide');
-    let maxHeight = 0;
-
-    slides.forEach(slide => {
-      let slideHeight = slide.offsetHeight;
-      if (slideHeight > maxHeight) {
-        maxHeight = slideHeight;
-      }
-    });
-    slides.forEach(slide => {
-      slide.style.height = `${maxHeight}px`;
-    });
-  } else {
-    const slides = document.querySelectorAll('.swiper-slide');
-    slides.forEach(slide => {
-      slide.style.height = 'auto';
-    });
-  }
-}

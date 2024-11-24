@@ -169,3 +169,11 @@
   margin-top: 20px;
   position: static;
 }
+
+#swiper-button-prev,
+#swiper-button-next {
+  pointer-events: auto;
+  /* Должно быть включено */
+  z-index: 10;
+  /* Убедитесь, что кнопки находятся над Swiper */
+}
