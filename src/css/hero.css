@@ -1,0 +1,203 @@
+.hero {
+  max-width: 100%;
+  margin: 0 auto;
+  background-image: url("../img/hero/hero-modal-background-mb2x.png");
+  background-repeat: no-repeat;
+  background-position: top -48px right 16px;
+  background-size: cover;
+  padding-top: 88px;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.hero-content {
+  text-align: center;
+  padding: 20px;
+}
+.hero-title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 125%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.hero-btn-div {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.hero-button {
+  border-radius: 16px;
+  width: 165px;
+  height: 92px;
+  background: var(--color-light-accent);
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: visible;
+  margin-left: 155px;
+  transition: color 0.2s ease;
+  margin-top: 16px;
+}
+.hero-button:hover {
+  background: var(--color-accent-green);
+  transition: color 0.2s ease;
+}
+
+.text-hero-btn {
+  margin-left: -112px;
+  color: var(--color-black);
+}
+.hero-arrow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: -145px;
+}
+.hero-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+  margin: 0;
+  text-transform: uppercase;
+  text-align: left;
+}
+.hero-description .highlight-green {
+  color: var(--color-accent-green);
+}
+.hero-image {
+  display: none;
+}
+.social-links {
+  background: var(--color-light-grey);
+  height: 232px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+  padding: 52px;
+  margin-top: 72px;
+}
+.social-links li:hover{
+  color: var(--color-accent-green);
+}
+@media (min-width: 768px) {
+  .hero{
+    background-image: url("../img/hero/hero-background-tab2x.png");
+    background-position: top -68px right 48px;
+    background-size: cover;
+  }
+
+  .hero-button {
+      width: 261px;
+      margin-bottom: 40px;
+  }
+  .text-hero-btn {
+      margin-left: -102px;
+  }
+  .hero-arrow {
+      margin-left: -135px;
+  }
+  .social-links {
+      flex-direction: row;
+      margin-top: 104px;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+  }
+  .hero-container {
+      flex-direction: column;
+  }
+  .hero-title {
+      font-size: 124px;
+      line-height: 119%;
+      letter-spacing: 0.01em;
+  }
+  .hero-description {
+      font-size: 20px;
+      line-height: 160%;
+  }
+  .social-links {
+      height: auto;
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+      background-image: url("../img/hero/hero-background-dp2x.png");
+      background-position: top -317px right -44px;
+    }
+
+  .hero-description{
+    width: 592px;
+    margin-top: 10px;
+  }
+  .desktop-hero-btn {
+      display: flex;
+      flex-direction: row;
+      gap: 196px;
+  }
+  .hero-title {
+      margin-bottom: 80px;
+      width: 552px;
+  }
+  .hero-container {
+      flex-direction: row;
+  }
+  .hero-content {
+      max-width: 50%;
+      text-align: left;
+  }
+  .hero-image {
+      display: block;
+      height: 444px;
+  }
+  .hero-image img {
+      border-radius: 32px;
+      width: 592px;
+      height: 100%;
+      object-fit: cover;
+  }
+  .hero-container-photo-title{
+      display: flex;
+      flex-direction: row;
+  }
+  .hero-container-photo-title{
+      gap: 72px;
+  }
+
+  .hero-btn-desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-links{
+    margin-top: 40px;
+  }
+}

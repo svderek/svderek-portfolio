@@ -8,4 +8,5 @@ import './js/faq.js';
 import './js/reviews.js';
 import './js/work-together.js';
 import './js/footer.js';
-import './js/modal.js';
+import './js/mobile-menu.js';
+import './js/dark-theme.js';
