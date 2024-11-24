@@ -73,21 +73,16 @@
     color: var(--color-accent-green);
   }
 
-.theme-button {
+#themeToggleButton {
   background: none;
   border: none;
   cursor: pointer;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
 }
 
-.theme-icon {
-  width: 50px;
-  height: 50px;
+#themeToggleButton img {
+  width: 48px;
+  height: 24px;
 }
  
 @media (max-width: 767px) { 
