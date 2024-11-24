@@ -1,36 +1,31 @@
 const themeButton = document.getElementById('themeToggleButton');
-const buttonIcon = document.getElementById('buttonIcon');
-
-function updateTheme(theme) {
-  const root = document.documentElement;
-  root.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
-
-  const newIcon =
-    theme === 'light'
-      ? '/public/light-theme-btn.svg'
-      : '/public/dark-theme-btn.svg';
-
-  buttonIcon.classList.add('fade-out');
-  setTimeout(() => {
-    buttonIcon.src = newIcon;
-    buttonIcon.classList.remove('fade-out');
-    buttonIcon.classList.add('fade-in');
-    setTimeout(() => buttonIcon.classList.remove('fade-in'), 300);
-  }, 300);
-}
-
+const themeIconUse = document.getElementById('buttonIcon'); 
 
 function toggleTheme() {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const root = document.documentElement;
+  const currentTheme = root.getAttribute('data-theme') || 'light';
+
   const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-  updateTheme(newTheme);
+  root.setAttribute('data-theme', newTheme);
+  localStorage.setItem('theme', newTheme);
+
+  const newIconHref =
+    newTheme === 'light'
+      ? './img/theme-switch.svg#icon-light-theme-btn'
+      : './img/theme-switch.svg#icon-dark-theme-btn';
+  themeIconUse.setAttribute('href', newIconHref);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('theme') || 'light';
-  updateTheme(savedTheme);
+  const root = document.documentElement;
+  root.setAttribute('data-theme', savedTheme);
 
+  const initialIconHref =
+    savedTheme === 'light'
+      ? './img/theme-switch.svg#icon-light-theme-btn'
+      : './img/theme-switch.svg#icon-dark-theme-btn';
+  themeIconUse.setAttribute('href', initialIconHref);
 
   themeButton.addEventListener('click', toggleTheme);
 });
