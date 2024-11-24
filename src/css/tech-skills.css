@@ -1,0 +1,114 @@
+.tech-skills{
+    margin-bottom: 80px;
+    overflow: hidden;
+    height: 280px;
+}
+
+@media (min-width: 768px){
+    .tech-skills{
+        margin-bottom: 124px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .tech-skills {
+        margin-bottom: 164px;
+    }
+}
+
+.tech-skills-dot-icon1{
+    fill: var(--color-accent-green);
+}
+
+.tech-skills-dot-icon1 {
+    fill: var(--color-black);
+}
+
+
+.marquee {
+    overflow: hidden;
+    background-color: var(--color-light-accent);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--color-black);
+    position: relative;
+    z-index: 2;
+}
+
+.marquee__inner {
+    display: flex;
+}
+
+.marquee__line {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 40px 15px;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.marquee__line svg{
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-bottom: -5px;
+}
+
+.marquee2 {
+    max-width: 100vw;
+    overflow: hidden;
+    background-color: var(--color-light-grey);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--color-accent-green);
+    transform: rotate(2deg);
+    position: relative;
+    z-index: 1;
+}
+
+.marquee__inner2 {
+    display: flex;
+    min-width: 100%;
+}
+
+.marquee__line2 {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 40px 15px;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 9s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.marquee__line2 svg {
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-bottom: -5px;
+    fill: var(--color-black);
+}
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+

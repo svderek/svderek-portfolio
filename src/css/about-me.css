@@ -10,14 +10,14 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: right;
-    color: #292929;
+    color: var(--color-black);
     display: flex;
     padding-top: 79px;
     padding-bottom: 40px;
     }
 
 .span_h2_aboutMe{
-    color: #00B068;}
+    color: var(--color-accent-green);}
 
 .photo_aboutMe{
    /* padding-bottom: 40px;*/
@@ -30,8 +30,8 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #292929;
     padding-top: 40px;
+    color: var(--color-black);
     }
 
 .ul_aboutMe{
@@ -40,6 +40,7 @@
     flex-direction: column;
     gap: 24px;
     padding-bottom: 40px;
+    color: var(--color-black);
 }
 
 .ul_2_aboutMe{
@@ -47,7 +48,9 @@
     padding-bottom: 40px;
     display: flex;
     flex-direction: column;
-    gap: 12px;}
+    gap: 12px;
+    color: var(--color-black);
+}
 
 .li_2_aboutMe{
     display: flex;
@@ -63,8 +66,28 @@
 
 
 @media screen and (min-width: 768px){
-.aboutMe{
-    padding-bottom: 0;}
+.aboutMe {
+        position: relative;
+        padding-bottom: 0;
+        background: none;
+        /* Убираем фон из основного блока */
+    }
+
+    .aboutMe::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../img/about-me/about-me-background-tab2x.png");
+        background-repeat: no-repeat;
+        background-size: 336px 252px;
+        background-position: top 922px right 52px;
+        filter: blur(3.19px);
+        z-index: -1;
+    }
+
 
 .h2_aboutMe{
     padding-top: 124px;
@@ -75,9 +98,8 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     text-align: right;
-    color: #292929;}
+    color: var(--color-black);}
 
-.container{padding: 0;}
 
 .h3_aboutMe{
     font-size: 36px;
@@ -117,13 +139,15 @@
 
 
 
- @media screen and (min-width: 1280px) {
-.container {
-    max-width: 100%;
-    width: 100%;   
-    padding: 0 20px; 
-    margin: 0 auto;}
+@media screen and (min-width: 1280px) {
+
+    .aboutMe::before{
+        background-image: url("../img/about-me/about-me-background-dp2x.png");
+        background-size: 384px 288px;
+        background-position: top 922px right 52px;
+    }
     
+
 .h2_aboutMe{
     padding-top: 164px;
 }
@@ -148,6 +172,7 @@
 .role{
     padding-left: 136px;
 }
+
 }
 
 @media screen and (min-width: 319px){
