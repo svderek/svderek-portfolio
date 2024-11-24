@@ -65,8 +65,28 @@
 
 
 @media screen and (min-width: 768px){
-.aboutMe{
-    padding-bottom: 0;}
+.aboutMe {
+        position: relative;
+        padding-bottom: 0;
+        background: none;
+        /* Убираем фон из основного блока */
+    }
+
+    .aboutMe::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../img/about-me/about-me-background-tab2x.png");
+        background-repeat: no-repeat;
+        background-size: 336px 252px;
+        background-position: top 922px right 52px;
+        filter: blur(3.19px);
+        z-index: -1;
+    }
+
 
 .h2_aboutMe{
     padding-top: 124px;
@@ -119,6 +139,12 @@
 
 
 @media screen and (min-width: 1280px) {
+
+    .aboutMe::before{
+        background-image: url("../img/about-me/about-me-background-dp2x.png");
+        background-size: 384px 288px;
+        background-position: top 922px right 52px;
+    }
     
     .h2_aboutMe{
         padding-top: 164px;
