@@ -1,3 +1,7 @@
+.wt-section{
+  margin-bottom: 80px;
+}
+
 .wt-section h2 {
   color: var(--color-black);
   text-align: left;
@@ -21,6 +25,7 @@
     background-position: right top;
     background-repeat: no-repeat;
     background-image: url('../img/work-together/wt-background-tab.png');
+    margin-bottom: 124px;
   }
 
   .wt-section h2 {
@@ -56,6 +61,7 @@
     background-position: 95% 84px;
     background-image: url('../img/work-together/wt-background.png');
     background-attachment: local;
+    margin-bottom: 164px;
   }
 
   .wt-section h2 {
