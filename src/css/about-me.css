@@ -20,7 +20,7 @@
     color: #00B068;}
 
 .photo_aboutMe{
-    padding-bottom: 40px;
+   /* padding-bottom: 40px;*/
     border-radius: 19px;
 }
 
@@ -31,6 +31,7 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #292929;
+    padding-top: 40px;
     }
 
 .ul_aboutMe{
@@ -50,7 +51,6 @@
 
 .li_2_aboutMe{
     display: flex;
-    
     flex-direction: row;
 }
 .icon-dot {
@@ -83,6 +83,7 @@
     font-size: 36px;
     line-height: 1.33333;
     letter-spacing: 0.01em;
+    padding-top: 60px;
 }
 
 .aboutMe .content {
@@ -92,19 +93,18 @@
     "photo bio"
     "education role";}
     
-.bio {grid-area: bio;}
+.bio {grid-area: bio;
+   }
 
 .ul_aboutMe{
     padding-bottom: 12px;
 }
     
 .photo {grid-area: photo;
-    padding-top: 346px;
+    padding-top: 406px;
     padding-right: 32px;
 }
-.photo_aboutMe{
-    padding-bottom: 60px;
-}
+.photo_aboutMe{}
 
 .education {grid-area: education;}
     
@@ -130,12 +130,14 @@
 .photo{
     padding-top: 280px;
     padding-left: 219px;
-    padding-bottom: 80px;
 }
 .photo_aboutMe{
     padding: 0;
     width: 384px;
     height: 448px;
+}
+.h3_aboutMe{
+    padding-bottom: 80px;
 }
 .bio{
     padding-left: 136px;
@@ -148,7 +150,7 @@
 }
 }
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 319px){
 .aboutMe{
     background-color: #1E2023;}
 }
