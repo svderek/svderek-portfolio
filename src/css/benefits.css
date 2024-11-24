@@ -1,5 +1,5 @@
 .benefits-container {
-  padding: 0 20px;
+  /*padding: 0 20px;*/
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -67,7 +67,7 @@
 
 @media screen and (min-width: 768px) {
   .benefits-container {
-    padding: 0 32px;
+    /*padding: 0 32px;*/
     padding-top: 62px;
     padding-bottom: 62px;
   }
