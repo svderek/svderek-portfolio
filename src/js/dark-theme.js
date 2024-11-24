@@ -7,7 +7,8 @@ function updateTheme(theme) {
   localStorage.setItem('theme', theme);
 
   const newIcon =
-    theme === 'light' ? '../img/light-theme-btn.svg' : '../img/dark-theme-btn.svg';
+    theme === 'light'
+      ? './img/light-theme-btn.svg': './img/dark-theme-btn.svg';
   buttonIcon.classList.add('fade-out');
   setTimeout(() => {
     buttonIcon.src = newIcon;
