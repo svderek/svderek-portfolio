@@ -21,6 +21,7 @@
 
 .photo_aboutMe{
     padding-bottom: 40px;
+    border-radius: 19px;
 }
 
 .h3_aboutMe{font-family: "Poppins", sans-serif;
@@ -147,3 +148,7 @@
 }
 }
 
+@media screen and (min-width: 1300px){
+.aboutMe{
+    background-color: #1E2023;}
+}
