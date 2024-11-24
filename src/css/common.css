@@ -10,8 +10,9 @@
     --hero-button-color: #bcdfd1;
     --color-light-grey: #e4e5e6;
     --color-hover-green: #009156;
-    --color-charcoal: #f0f0f0;
+    --color-faq-border:#e4e5e6;
     --color-accent-green: #00b068;
+    --color-charcoal: #f0f0f0;
     --color-white: #f0f0f0;
     --color-light-grey: #e4e5e6;
     --color-light-accent: #bcdfd1;
@@ -28,6 +29,8 @@
     --hero-button-color: #14c57c;
     --color-light-grey: #2a2d32;
     --color-hover-green: #009156;
+    --color-faq-border: #f0f0f0;
+
     --color-blackk: #1e2023;
     --color-accent-green: #14c57c;
     --color-white: #f0f0f0;

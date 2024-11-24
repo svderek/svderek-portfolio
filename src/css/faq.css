@@ -27,7 +27,8 @@
 
 .ac-header {
     font-weight: normal; 
-    background-color: var(--color-light-grey);
+    background-color: var(--background-color);
+    border-top: 1px solid var(--color-faq-border);
 }
 
 .ac-header-button {
@@ -64,6 +65,7 @@
 
 .ac {
     background-color: transparent;
+    border: none !important;
 }
 .ac.is-active>.ac-header .faq-ac-trigger {
     background-color: var(--color-light-accent);

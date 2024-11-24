@@ -14,7 +14,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   /* color: #292929; */
-  color: var(---color-black);
+  color: var(--color-black);
 }
 .accent {
   color: var(--color-accent-green);
