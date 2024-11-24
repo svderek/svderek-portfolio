@@ -11,8 +11,8 @@ function toggleTheme() {
 
   const newIconHref =
     newTheme === 'light'
-      ? './img/theme-switch.svg#icon-light-theme-btn'
-      : './img/theme-switch.svg#icon-dark-theme-btn';
+      ? '#icon-light-theme-btn'
+      : '#icon-dark-theme-btn';
   themeIconUse.setAttribute('href', newIconHref);
 }
 
@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const initialIconHref =
     savedTheme === 'light'
-      ? './img/theme-switch.svg#icon-light-theme-btn'
-      : './img/theme-switch.svg#icon-dark-theme-btn';
+      ? '#icon-light-theme-btn'
+      : '#icon-dark-theme-btn';
   themeIconUse.setAttribute('href', initialIconHref);
 
   themeButton.addEventListener('click', toggleTheme);
