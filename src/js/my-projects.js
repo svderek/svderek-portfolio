@@ -123,7 +123,8 @@ const loadMoreButton = document.getElementById('load-more-btn');
 function createProjectHTML(projects) {
   return `
     <li class="my-projects-item">
-      <picture>
+      <div class="image-container">
+        <picture>
         <source
           srcset="
             ${projects.images['1x']} 1x,
@@ -137,6 +138,7 @@ function createProjectHTML(projects) {
           alt="${projects.title}"
         />
       </picture>
+       </div>
       <p class="my-projects-technologies">${projects.technologies}</p>
       <div class="my-projects-card-row">
         <h3 class="my-projects-names">${projects.title}</h3>

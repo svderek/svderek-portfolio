@@ -160,9 +160,6 @@
     width: 384px;
     height: 448px;
 }
-.h3_aboutMe{
-    padding-bottom: 80px;
-}
 .bio{
     padding-left: 136px;
 }
@@ -175,7 +172,3 @@
 
 }
 
-@media screen and (min-width: 319px){
-.aboutMe{
-    background-color: var(--background-color);}
-}

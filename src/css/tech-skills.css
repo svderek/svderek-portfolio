@@ -16,11 +16,13 @@
     }
 }
 
-.tech-skills-dot-icon1{
+
+
+.tech-skills-dot-icon1 {
     fill: var(--color-accent-green);
 }
 
-.tech-skills-dot-icon1 {
+.tech-skills-dot-icon2{
     fill: var(--color-black);
 }
 

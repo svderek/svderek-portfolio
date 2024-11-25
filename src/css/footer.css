@@ -1,79 +1,80 @@
 .footer {
-    padding-top: 40px;
-    padding-bottom: 24px;
-    border-top: 1px solid var(--color-light-grey);
+  padding-top: 40px;
+  padding-bottom: 24px;
+  border-top: 1px solid var(--color-light-grey);
 }
 
 .footer__content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__content-wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__logo {
-    font-family: 'Impact', sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    margin-bottom: 32px;
-    color: var(--color-black);
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  color: var(--color-black);
 }
 
 .footer__list {
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-.footer__list-item{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    color: var(--color-black);
+.footer__list-item {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+  transition: color 0.3s ease;
 }
 
-.footer__list-item:hover{
-    color: var(--color-hover-green);
-}
-
-.footer__copyright{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0.03em;
-    color: var(--color-black);
+.footer__list-item:hover {
+  color: var(--color-hover-green);
 }
 
 .footer__copyright {
-    margin: 0 auto;
-    text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
+}
+
+.footer__copyright {
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
-    .footer__list {
-        flex-direction: row;
-        gap: 40px;
-    }
+  .footer__list {
+    flex-direction: row;
+    gap: 40px;
+  }
 
-    .footer__copyright {
-        margin: 0;
-        text-align: right;
-    }
+  .footer__copyright {
+    margin: 0;
+    text-align: right;
+  }
 }
 
 @media (min-width: 1280px) {
-    .footer__content-wrapper {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  .footer__content-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

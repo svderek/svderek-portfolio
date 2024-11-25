@@ -6,12 +6,7 @@
 
   line-height: 1.23077;
   letter-spacing: 0.03em;
-
-  display: flex;
-
-  justify-content: center;
-  gap: 0.8rem;
-  align-items: center;
+  text-align: center;
 }
 
 .accent {
@@ -76,6 +71,11 @@
 }
 
 .my-projects-img {
+  border-radius: 24px;
+  transform: scale(1.05);
+}
+.image-container {
+  overflow: hidden;
   border-radius: 24px;
 }
 
