@@ -235,3 +235,11 @@
       }
     }
   }
+
+.ac-header-button {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-word;
+    display: block;
+    margin-right: 24px;
+}
