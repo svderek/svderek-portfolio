@@ -64,8 +64,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.my-projects-link:hover,
-.my-projects-link:focus {
+.my-projects-link:hover {
   cursor: pointer;
   background-color: var(--color-hover-grey);
 }

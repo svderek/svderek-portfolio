@@ -64,9 +64,6 @@
 .nav-link:hover {
   color: var(--color-accent-green);
 }
-.nav-link:focus {
-  color: var(--color-accent-green);
-}
 
 #themeToggleButton {
   background: none;
