@@ -151,6 +151,10 @@
   }
 }
 @media (min-width: 1280px) {
+  .hero-p-button{
+    display:flex;
+    flex-direction:row;
+  }
   .hero {
     background-image: url('../img/hero/hero-background-dp2x.png');
     background-position: top -317px right -44px;
@@ -161,9 +165,11 @@
     margin-top: 10px;
   }
   .desktop-hero-btn {
-    display: flex;
-    flex-direction: row;
-    gap: 196px;
+
+      display: flex;
+      flex-direction: row;
+      gap: 196px;
+      padding-right: 200px;
   }
   .hero-title {
     margin-bottom: 80px;
