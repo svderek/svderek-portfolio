@@ -9,15 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
       .map(
         ({ author, avatar_url, review }) => `
         <li class="swiper-slide" id="reviews-list-item">
-          <p class="reviews-item-text">${review}</p>
-          <div class="img-title-wraper">
+     <p class="reviews-item-text">${review}</p>
             <img class="reviews-item-img"
                  src=${avatar_url}
                  alt="image of ${author}"
                  width="40"
                  height="40">
             <h3 class="reviews-item-title">${author}</h3>
-          </div>
+          </div>          
         </li>`
       )
       .join('');
