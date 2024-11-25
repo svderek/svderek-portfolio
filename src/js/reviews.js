@@ -36,29 +36,41 @@ document.addEventListener('DOMContentLoaded', () => {
       const swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 32,
+        navigation: {
+          nextEl: '#swiper-button-next',
+          prevEl: '#swiper-button-prev',
+        },
         breakpoints: {
-          1280: { slidesPerView: 2, spaceBetween: 32, slidesPerGroup: 2 },
+          1280: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+            slidesPerGroup: 2,
+          },
         },
         simulateTouch: true,
         autoHeight: false,
         on: {
-          reachEnd: function () {
-            document
-              .querySelector('.swiper-button-next')
-              .classList.add('disabled');
+          init: function () {
+            const prevButton = document.querySelector('#swiper-button-prev');
+            if (this.isBeginning) {
+              prevButton.classList.add('disabled');
+            }
           },
           reachBeginning: function () {
             document
-              .querySelector('.swiper-button-prev')
+              .querySelector('#swiper-button-prev')
               .classList.add('disabled');
           },
           fromEdge: function () {
+            const prevButton = document.querySelector('#swiper-button-prev');
+            const nextButton = document.querySelector('#swiper-button-next');
+            prevButton.classList.remove('disabled');
+            nextButton.classList.remove('disabled');
+          },
+          reachEnd: function () {
             document
-              .querySelector('.swiper-button-next')
-              .classList.remove('disabled');
-            document
-              .querySelector('.swiper-button-prev')
-              .classList.remove('disabled');
+              .querySelector('#swiper-button-next')
+              .classList.add('disabled');
           },
         },
       });

@@ -102,10 +102,7 @@
   color: var(--color-black);
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
-}
+
 
 #swiper-button-prev,
 #swiper-button-next {
@@ -123,6 +120,7 @@
 .button-icon {
   stroke-width: 2px;
   stroke: var(--color-black);
+  fill: none;
 }
 
 #swiper-button-next {
@@ -173,4 +171,10 @@
   /* Должно быть включено */
   z-index: 10;
   /* Убедитесь, что кнопки находятся над Swiper */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none !important;
+  content: none !important;
 }
