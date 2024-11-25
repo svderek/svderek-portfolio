@@ -131,3 +131,7 @@
     letter-spacing: 0.05em;
   }
 }
+
+.burger-btn-svg{
+  fill: var(--color-black);
+}
