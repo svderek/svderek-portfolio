@@ -1,18 +1,3 @@
-.reviews-section {
-  margin-bottom: 80px;
-}
-
-@media (min-width: 768px) {
-  .reviews-section {
-    margin-bottom: 124px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .reviews-section {
-    margin-bottom: 164px;
-  }
-}
 
 .reviews-section-title {
   margin: 0 auto;
