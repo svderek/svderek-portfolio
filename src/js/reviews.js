@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ({ author, avatar_url, review }) => `
         <li class="swiper-slide" id="reviews-list-item">
      <p class="reviews-item-text">${review}</p>
+     <div class="img-title-wraper">
             <img class="reviews-item-img"
                  src=${avatar_url}
                  alt="image of ${author}"
